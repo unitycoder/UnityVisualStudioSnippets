@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>stopwatch</Title>
+      <Shortcut>stopwatch</Shortcut>
+      <Description>Code snippet for StopWatch timer</Description>
+      <Author>unitycoder.com</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false"></Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[var stopwatch = new System.Diagnostics.Stopwatch();
+stopwatch.Start();
+
+$end$ 
+ 
+stopwatch.Stop();
+Debug.LogFormat("Timer: {0} ms", stopwatch.ElapsedMilliseconds);
+stopwatch.Reset();
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
