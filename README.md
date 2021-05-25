@@ -7,7 +7,7 @@ Unity API code snippets for VisualStudio
 - Then in Visual Studio can type snippet like: dbl and press TAB TAB
 
 # Create Your Own Snippets
-- Go to http://tools.unitycoder.com/VisualStudioSnippetsGenerator/
+- Go to https://tools.unitycoder.com/VisualStudioSnippetsGenerator/
 - Fill in the details, press download, and place that file into your "My Snippets" folder
 
 # Contributing
