@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>rayc</Title>
+      <Shortcut>rayc</Shortcut>
+      <Description>Code snippet for Mouse Raycast</Description>
+      <Author></Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="false"></Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[if (Input.GetMouseButtonDown(0))
+{
+    RaycastHit hit;
+    var ray = cam.ScreenPointToRay(Input.mousePosition);
+    if (Physics.Raycast(ray.origin, ray.direction, out hit, 999, layerMask))
+    {
+        Debug.Log(hit.transform.name);
+        Debug.DrawLine(ray.origin, hit.point, Color.red, 10);
+        Debug.DrawRay(hit.point, hit.normal, Color.green, 10);
+    }
+}$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
