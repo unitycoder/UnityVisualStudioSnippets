@@ -12,3 +12,6 @@ Unity API code snippets for VisualStudio
 
 # Contributing
 - Feel free to post / pull request new unity related snippets here
+
+### Other resources
+- more snippets https://github.com/oleghcp/vssnippets
